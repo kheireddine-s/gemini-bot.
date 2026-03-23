@@ -6,18 +6,14 @@ Features: Image analysis · Video description & translation · Voice transcripti
 """
 
 import os
-import sys
+import telebot
+import google.generativeai as genai
 import time
 import threading
 import logging
 import tempfile
 from keep_alive import keep_alive
 
-keep_alive()
-
-from google import genai
-from google.genai import types
-import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 from keep_alive import keep_alive
